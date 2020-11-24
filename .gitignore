@@ -1,3 +1,4 @@
+.gitignore
 dmenu
 dmenu.o
 drw.o
