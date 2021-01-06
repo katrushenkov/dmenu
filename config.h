@@ -4,22 +4,17 @@
 static int topbar = 1;                      /* -b  option; if 0, dmenu appears at bottom     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"monospace:size=10",
-	"JoyPixels:pixelsize=8:antialias=true:autohint=true"
+	"Hack:size=9:antialias=true:autohint=true",
+	"JoyPixels:pixelsize=14:antialias=true:autohint=true"
 };
 static const unsigned int bgalpha = 0xe0;
 static const unsigned int fgalpha = OPAQUE;
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
-	/*[SchemeNorm] = { "#bbbbbb", "#222222" },*/
-	[SchemeNorm] = { "#bbbbbb", "#000000" },
-	[SchemeSel] = { "#eeeeee", "#005577" },
-	[SchemeOut] = { "#000000", "#00ffff" },
-	/*[SchemeNorm] = { "#BcC3C3", "#000000" },*/
-	/*[SchemeSel] = { "b9b9b9", "#005577" },  */
-	/*[SchemeOut] = { "#000000", "#00ffff" }, */
-
+	[SchemeNorm] = { "#a89984", "#282828" },
+	[SchemeSel] = { "#a89984", "#4d6e4e" },
+	[SchemeOut] = { "#4d6e4e", "#a89984" },
 };
 static const unsigned int alphas[SchemeLast][2] = {
 	/*		fgalpha		bgalphga	*/
